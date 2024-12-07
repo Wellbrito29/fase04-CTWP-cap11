@@ -1,72 +1,196 @@
-# FIAP - Faculdade de Informática e Administração Paulista
+# Implementando Algoritmos de Machine Learning com Scikit-learn  
+**Capítulo 3**
 
-<p align="center">
-<a href= "https://www.fiap.com.br/"><img src="assets/logo-fiap.png" alt="FIAP - Faculdade de Informática e Admnistração Paulista" border="0" width=40% height=40%></a>
-</p>
+---
 
-<br>
+### Desenvolvedores  
+- **CELESTE LEITE DOS SANTOS** - RM 559312  
+- **LUMA SANTOS DE OLIVEIRA** - RM 560146  
+- **WELLIGTON NASCIMENTO** - RM 552157  
+- **RICARDO ARAÚJO DE OLIVEIRA** - RM 561182  
 
-# Nome do projeto
+---
 
-## Nome do grupo
+### Link da Atividade  
+[Google Colab](https://colab.research.google.com/drive/1yzjNbtNg_SQEM0M4uZsBB7z3FRw_NVi6?usp=sharing#scrollTo=xe9ree5pUiPb)  
 
-## 👨‍🎓 Integrantes: 
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 1</a>
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 2</a>
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 3</a> 
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 4</a> 
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 5</a>
+---
 
-## 👩‍🏫 Professores:
-### Tutor(a) 
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do Tutor</a>
-### Coordenador(a)
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do Coordenador</a>
+## Análise das Acurácias e Relatórios de Classificação para Cada Modelo  
 
+### 1. **Regressão Logística**  
+**Acurácia**: 0.90  
 
-## 📜 Descrição
+**Relatório de Classificação**:  
 
-*Descreva seu projeto com base no texto do PBL (até 600 palavras)*
+| Classe | Precision | Recall | F1-Score | Support |  
+|--------|-----------|--------|----------|---------|  
+| 0      | 0.88      | 0.93   | 0.90     | 30      |  
+| 1      | 0.92      | 0.88   | 0.90     | 32      |  
+| 2      | 0.90      | 0.88   | 0.89     | 34      |  
 
+**Métricas gerais**:  
 
-## 📁 Estrutura de pastas
+| Métrica        | Valor |  
+|----------------|-------|  
+| Accuracy       | 0.90  |  
+| Macro Avg      | 0.90  |  
+| Weighted Avg   | 0.90  |  
 
-Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
+---
 
-- <b>.github</b>: Nesta pasta ficarão os arquivos de configuração específicos do GitHub que ajudam a gerenciar e automatizar processos no repositório.
+### 2. **KNN (K-Nearest Neighbors)**  
+**Acurácia**: 0.88  
 
-- <b>assets</b>: aqui estão os arquivos relacionados a elementos não-estruturados deste repositório, como imagens.
+**Relatório de Classificação**:  
 
-- <b>config</b>: Posicione aqui arquivos de configuração que são usados para definir parâmetros e ajustes do projeto.
+| Classe | Precision | Recall | F1-Score | Support |  
+|--------|-----------|--------|----------|---------|  
+| 0      | 0.85      | 0.90   | 0.88     | 30      |  
+| 1      | 0.90      | 0.88   | 0.89     | 32      |  
+| 2      | 0.88      | 0.85   | 0.86     | 34      |  
 
-- <b>document</b>: aqui estão todos os documentos do projeto que as atividades poderão pedir. Na subpasta "other", adicione documentos complementares e menos importantes.
+**Métricas gerais**:  
 
-- <b>scripts</b>: Posicione aqui scripts auxiliares para tarefas específicas do seu projeto. Exemplo: deploy, migrações de banco de dados, backups.
+| Métrica        | Valor |  
+|----------------|-------|  
+| Accuracy       | 0.88  |  
+| Macro Avg      | 0.88  |  
+| Weighted Avg   | 0.88  |  
 
-- <b>src</b>: Todo o código fonte criado para o desenvolvimento do projeto ao longo das 7 fases.
+---
 
-- <b>README.md</b>: arquivo que serve como guia e explicação geral sobre o projeto (o mesmo que você está lendo agora).
+### 3. **SVM (Kernel RBF)**  
+**Acurácia**: 0.92  
 
-## 🔧 Como executar o código
+**Relatório de Classificação**:  
 
-*Acrescentar as informações necessárias sobre pré-requisitos (IDEs, serviços, bibliotecas etc.) e instalação básica do projeto, descrevendo eventuais versões utilizadas. Colocar um passo a passo de como o leitor pode baixar o seu código e executá-lo a partir de sua máquina ou seu repositório. Considere a explicação organizada em fase.*
+| Classe | Precision | Recall | F1-Score | Support |  
+|--------|-----------|--------|----------|---------|  
+| 0      | 0.90      | 0.93   | 0.92     | 30      |  
+| 1      | 0.94      | 0.91   | 0.92     | 32      |  
+| 2      | 0.91      | 0.91   | 0.91     | 34      |  
 
+**Métricas gerais**:  
 
-## 🗃 Histórico de lançamentos
+| Métrica        | Valor |  
+|----------------|-------|  
+| Accuracy       | 0.92  |  
+| Macro Avg      | 0.92  |  
+| Weighted Avg   | 0.92  |  
 
-* 0.5.0 - XX/XX/2024
-    * 
-* 0.4.0 - XX/XX/2024
-    * 
-* 0.3.0 - XX/XX/2024
-    * 
-* 0.2.0 - XX/XX/2024
-    * 
-* 0.1.0 - XX/XX/2024
-    *
+---
 
-## 📋 Licença
+### 4. **SVM (Kernel Polinomial)**  
+**Acurácia**: 0.89  
 
-<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://github.com/agodoi/template">MODELO GIT FIAP</a> por <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://fiap.com.br">Fiap</a> está licenciado sobre <a href="http://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution 4.0 International</a>.</p>
+**Relatório de Classificação**:  
 
+| Classe | Precision | Recall | F1-Score | Support |  
+|--------|-----------|--------|----------|---------|  
+| 0      | 0.87      | 0.90   | 0.88     | 30      |  
+| 1      | 0.91      | 0.88   | 0.89     | 32      |  
+| 2      | 0.88      | 0.88   | 0.88     | 34      |  
 
+**Métricas gerais**:  
+
+| Métrica        | Valor |  
+|----------------|-------|  
+| Accuracy       | 0.89  |  
+| Macro Avg      | 0.89  |  
+| Weighted Avg   | 0.89  |  
+
+---
+
+### 5. **SVM (Kernel Linear)**  
+**Acurácia**: 0.87  
+
+**Relatório de Classificação**:  
+
+| Classe | Precision | Recall | F1-Score | Support |  
+|--------|-----------|--------|----------|---------|  
+| 0      | 0.85      | 0.87   | 0.86     | 30      |  
+| 1      | 0.88      | 0.88   | 0.88     | 32      |  
+| 2      | 0.88      | 0.85   | 0.86     | 34      |  
+
+**Métricas gerais**:  
+
+| Métrica        | Valor |  
+|----------------|-------|  
+| Accuracy       | 0.87  |  
+| Macro Avg      | 0.87  |  
+| Weighted Avg   | 0.87  |  
+
+---
+
+### 6. **Decision Tree**  
+**Acurácia**: 0.85  
+
+**Relatório de Classificação**:  
+
+| Classe | Precision | Recall | F1-Score | Support |  
+|--------|-----------|--------|----------|---------|  
+| 0      | 0.83      | 0.87   | 0.85     | 30      |  
+| 1      | 0.88      | 0.84   | 0.86     | 32      |  
+| 2      | 0.85      | 0.85   | 0.85     | 34      |  
+
+**Métricas gerais**:  
+
+| Métrica        | Valor |  
+|----------------|-------|  
+| Accuracy       | 0.85  |  
+| Macro Avg      | 0.85  |  
+| Weighted Avg   | 0.85  |  
+
+---
+
+### 7. **Random Forest**  
+**Acurácia**: 0.91  
+
+**Relatório de Classificação**:  
+
+| Classe | Precision | Recall | F1-Score | Support |  
+|--------|-----------|--------|----------|---------|  
+| 0      | 0.90      | 0.90   | 0.90     | 30      |  
+| 1      | 0.91      | 0.91   | 0.91     | 32      |  
+| 2      | 0.91      | 0.91   | 0.91     | 34      |  
+
+**Métricas gerais**:  
+
+| Métrica        | Valor |  
+|----------------|-------|  
+| Accuracy       | 0.91  |  
+| Macro Avg      | 0.91  |  
+| Weighted Avg   | 0.91  |  
+
+---
+
+## Insights Relevantes  
+
+- **SVM com Kernel RBF** apresentou a maior acurácia (0.92), destacando-se como o modelo mais eficaz.  
+- **Random Forest** obteve excelente desempenho com acurácia de 0.91, mostrando-se robusto.  
+- **Regressão Logística** e **KNN** também demonstraram boa performance com acurácias de 0.90 e 0.88, respectivamente.  
+- **Decision Tree** teve a menor acurácia (0.85), sugerindo que pode não ser ideal para este problema.  
+
+---
+
+### Limpeza de Dados  
+
+**Procedimento**:  
+- Utilizou-se o método **IQR (Interquartile Range)** para remover outliers.  
+- Após remoção:  
+
+| Shape Original | Shape Após Remoção |  
+|----------------|---------------------|  
+| (210, 8)       | (182, 8)           |  
+
+**Impacto nos Modelos**:  
+Após remoção, houve leve melhora na acurácia da maioria dos modelos, com destaque para o **SVM (Kernel RBF)**, que atingiu **0.93**.  
+
+---
+
+### Conclusão  
+
+Modelos como **SVM (Kernel RBF)** e **Random Forest** foram os mais adequados para o problema proposto. A limpeza e normalização dos dados provaram-se essenciais para maximizar a eficácia dos modelos.  
+
+---
